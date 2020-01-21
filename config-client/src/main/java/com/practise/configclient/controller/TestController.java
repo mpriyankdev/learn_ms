@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/config")
 public class TestController {
 
+
     @Value("${lucky-word}")
     private String luckyWord;
 
@@ -19,7 +20,9 @@ public class TestController {
 
         String str = "Todays lucky word is : " + luckyWord;
 
-        return new ResponseEntity<>(luckyWord, HttpStatus.OK);
+        return new ResponseEntity<>(str, HttpStatus.OK);
 
     }
+
+
 }

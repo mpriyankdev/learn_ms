@@ -5,7 +5,8 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/mpriyankdev/learn_ms.git
+          searchPaths: config_properties
 
 server:
   port: 12500
